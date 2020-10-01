@@ -71,7 +71,7 @@ Promise.allSettled(action).then((status) => {
         }
     }
     if (ok) {
-        zip.zipSync("public/.", path.resolve("resource.zip"))
+        zip.zipSync(path.resolve("public/."), path.resolve("resource.zip"))
         fsExtra.removeSync("public")
     }
 })
