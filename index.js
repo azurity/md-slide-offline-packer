@@ -71,7 +71,8 @@ Promise.allSettled(action).then((status) => {
         }
     }
     if (ok) {
-        zip.zipSync(path.resolve("public/."), path.resolve("resource.zip"))
-        fsExtra.removeSync("public")
+        console.log('corss-zip is useless, you should zip file yourself, I will fix this later.')
+        // zip.zipSync(path.resolve("public/."), path.resolve("resource.zip"))
+        // fsExtra.removeSync("public")
     }
 })
